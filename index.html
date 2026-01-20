@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Stars Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="search">
+    <input type="text" placeholder="Поиск по названию">
+</header>
+
+<nav class="categories" id="categories"></nav>
+
+<main id="menu"></main>
+
+<section id="checkout" class="sheet hidden">
+    <h2 id="checkoutTitle"></h2>
+    <p id="checkoutDesc"></p>
+    <div class="checkout-price" id="checkoutPrice"></div>
+    <button id="payBtn">Оплатить ⭐</button>
+    <button class="secondary" onclick="closeCheckout()">Отмена</button>
+</section>
+
+<section id="success" class="sheet hidden">
+    <h2>Спасибо за покупку ☕</h2>
+    <p>QR-код придёт вам в чат</p>
+    <button onclick="goHome()">На главную</button>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont;
+    background: #f5f5f7;
+    color: #1c1c1e;
+}
+
+.search {
+    padding: 12px;
+}
+
+.search input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: none;
+    background: #e5e5ea;
+    font-size: 16px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 12px;
+    font-weight: 500;
+    color: #8e8e93;
+}
+
+.categories span {
+    cursor: pointer;
+}
+
+.categories .active {
+    color: #1c1c1e;
+}
+
+#menu {
+    padding: 12px;
+    display: grid;
+    gap: 14px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(20px);
+}
+
+.card .info h3 {
+    margin: 0 0 6px;
+}
+
+.card .info p {
+    margin: 0;
+    font-size: 14px;
+    color: #636366;
+}
+
+.price {
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.card button {
+    border: none;
+    border-radius: 14px;
+    padding: 8px 14px;
+    font-size: 18px;
+}
+
+.sheet {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.secondary {
+    background: #d1d1d6;
+}
+
+body.dark {
+    background: #0f0f10;
+    color: #fff;
+}
+
+body.dark .card {
+    background: rgba(30,30,30,0.7);
+}
+
+body.dark .categories span {
+    background: rgba(40,40,40,0.7);
+    color: #ddd;
+}
+
+body.dark .categories .active {
+    background: #fff;
+    color: #000;
+}
+
+body.dark .modal-content {
+    background: #1c1c1e;
+}
+
+body.dark .pay {
+    background: #fff;
+    color: #000;
+}
+
